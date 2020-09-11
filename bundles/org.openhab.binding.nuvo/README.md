@@ -191,7 +191,7 @@ sitemap nuvo label="Audio Control" {
         Switch item=nuvo_system_page
     }
 
-    Frame label="Zone 1"
+    Frame label="Zone 1" {
         Switch item=nuvo_z1_power visibility=[nuvo_z1_lock!="1"]
         Selection item=nuvo_z1_source visibility=[nuvo_z1_power==ON] icon="player"
         //Volume can be a Setpoint also
